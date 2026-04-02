@@ -10,9 +10,16 @@ function Player()
     this.height = 100;
 
     //this is the color for player
-    this.color = "#ff3232ff";
-    
+    this.color = "#c43333ff";
 
+    this.draw = function()
+    {
+        useContext.fillstyle = this.color;
+        useContext.translate (this.x,this.y);
+        context.fillRect ((-this.width), (-this.width), this.width, this.height);
+        context.restore();
+
+    }
 
 
 
