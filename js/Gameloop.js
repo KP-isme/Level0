@@ -8,4 +8,4 @@ context = canvas.getContext("2d");
 player = new Player();
 
 player.draw();
-
+  
