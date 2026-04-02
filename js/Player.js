@@ -10,7 +10,7 @@ function Player()
     this.height = 100;
 
     //this is the color for player
-    this.color = "#ff3232ff";
+    this.color = "#ff0000";
     
     this.draw = function()
     {

@@ -1,6 +1,7 @@
 var canvas;
 var context;
-var Player;
+var player;
+
 
 canvas = document.getElementById("canvas");
 context = canvas.getContext("2d");
@@ -8,4 +9,3 @@ context = canvas.getContext("2d");
 player = new Player();
 
 player.draw();
-  
