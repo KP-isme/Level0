@@ -12,10 +12,13 @@ function Player()
     //this is the color for player
     this.color = "#ff0000";
     
+    this.vx = 0;
+    this.vy = 0;
+
     this.draw = function()
     {
         context.save();
-            context.fillstyle = this.color;
+            context.fillStyle = this.color;
             context.translate (this.x,this.y);
             context.fillRect ((-this.width/2), (-this.height/2), this.width, this.height);
         context.restore();
@@ -23,8 +26,11 @@ function Player()
     }
 
 
-
-
+        this.move = function()
+    {
+        this.x += this.vx;
+        this.y += this.vy;
+    }
 
 
 
