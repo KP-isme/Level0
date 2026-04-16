@@ -48,11 +48,48 @@ function GameObject(x,y,w,h,color)
     {
         this.color = color;
     }
+
+
+
+
+    // SETTING UP THE BOUNDING BOX (HIT BOXES REEEEEEEEE)
+    this.left = function()
+    {
+        return this.x - this.width/2
+    }
+    this.right = function()
+    {
+        return this.x +this.width/2
+    }
+    this.top = function()
+    {
+        return this.y - this.height/2
+    }
+    this.bottom = function()
+    {
+        return this.y + this.height/2
+    }
+
+
+
+
+    this.preX = this.x;
+
+
+    //setting up physics
+
+    this.force = 1;
+    this.ax = 1;    //horizontal accelaration
+    this.ay = 1;    //vertical accelaration
+
+    // the player's velocity
     this.vx = 0;
     this.vy = 0;
 
     this.drawRect = function()
     {
+
+
         context.save();
             context.fillStyle = this.color;
             context.translate (this.x,this.y);
@@ -77,6 +114,25 @@ function GameObject(x,y,w,h,color)
     {
         this.x += this.vx;
         this.y += this.vy;
+    }
+
+
+    this.collisionCheck = function(obj)
+    {
+        if  (
+            this.left() < obj.right() && 
+            this.right() > obj.left() &&
+            this.top() < obj.bottom() &&
+            this.bottom() > obj.top()
+            
+
+            )
+            {
+                return true;
+            }
+    return false            
+
+
     }
 
 
