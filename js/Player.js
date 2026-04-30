@@ -48,6 +48,7 @@ function GameObject(x,y,w,h,color)
     {
         this.color = color;
     }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
@@ -84,6 +85,8 @@ function GameObject(x,y,w,h,color)
     this.ay = 1;    //vertical accelaration
 
     // the player's velocity
+=======
+>>>>>>> parent of 4c23557 (I CAN JUMP)
     this.vx = 0;
     this.vy = 0;
 
@@ -95,8 +98,6 @@ function GameObject(x,y,w,h,color)
     this.draw = function()
 >>>>>>> parent of 9a17826 (box ITS RED OMg)
     {
-
-
         context.save();
             context.fillstyle = this.color;
             context.translate (this.x,this.y);
@@ -119,25 +120,6 @@ function GameObject(x,y,w,h,color)
 
 
 
-
-
-    this.collisionCheck = function(obj)
-    {
-        if  (
-            this.left() < obj.right() && 
-            this.right() > obj.left() &&
-            this.top() < obj.bottom() &&
-            this.bottom() > obj.top()
-            
-
-            )
-            {
-                return true;
-            }
-    return false            
-
-
-    }
 
 
 

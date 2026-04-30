@@ -3,11 +3,6 @@ var context;
 var player;
 
 
-var frictionX = 0.85;
-var frictionY = 0.5;
-var gravity = 1;
-
-
 canvas = document.getElementById("canvas");
 context = canvas.getContext("2d");
 
@@ -19,12 +14,9 @@ player.vy = 0;
 
 <<<<<<< HEAD
 
-/*
 npc1 = new GameObject(300, canvas.height/2, 100, 100, "#00ff00");
 npc2 = new GameObject(600, canvas.height/2, 100, 100, "#0000ff");
 npc3 = new GameObject(900, canvas.height/2, 100, 100, "#ff00ff");
-*/
-
 
 timer = setInterval(animate, interval);
 
@@ -32,7 +24,7 @@ function animate()
 {
     context.clearRect(0, 0, canvas.width, canvas.height);
     
-/*
+
     if (d)
     {
         player.x += 4
@@ -42,52 +34,14 @@ function animate()
     {
         player.x -= 4
     }
-  */  
-
-    doHandleAcceleration();
-    doHandleFriction();
-    doHandleGravity();
-    doHandlePosition();
-    doCheckBottomBounds();
-
-
-
+    
     player.move();
     if (player.x > canvas.width + player.width/2)
     {
-        player.x = player-width/2
+        player.x = -player/width/2
     }
 
-/*//npc collition
-    if (npc1.collisionCheck(player))
-    {
-        npc1.color = "yellow";
-        npc1.width = 125;
-    }
-    else
-    {
-        npc1.color = "green";
-        npc1.width = 100;
-    }
-
-    
-
-    if (npc2.collisionCheck(player))
-    {
-        context.strokeRect(npc2.x-npc2.width/2, npc2.y-npc2.height/2, npc2.width, npc2.height);
-    }
-
-    if (npc3.collisionCheck(player))
-    {
-        player.x = player.preX
-    }
-    else 
-    {
-        player.preX = player.x;
-    }
-*/ 
-
-    //all the things under would have made it bounce off walls and move (if you change the player.vx value)
+    //all the things under would have made it bounce off walls
 
     // if (player.x > canvas.width - player.width/2) 
     // {
@@ -113,6 +67,7 @@ function animate()
     npc1.drawCircle();
     npc2.drawCircle();
     npc3.drawRect();
+<<<<<<< HEAD
 }
 
 
@@ -181,3 +136,6 @@ player = new Player();
 
 player.draw();
 >>>>>>> parent of 9a17826 (box ITS RED OMg)
+=======
+}
+>>>>>>> parent of 4c23557 (I CAN JUMP)
