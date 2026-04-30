@@ -1,4 +1,4 @@
--var canvas;
+var canvas;
 var context;
 var player;
 var timer;
