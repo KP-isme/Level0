@@ -1,4 +1,4 @@
-var canvas;
+-var canvas;
 var context;
 var player;
 var timer;
@@ -160,7 +160,7 @@ function doCheckBottomBounds ()
         player.vy = 0;
         doJump();
     }
-}
+} 
 function doJump()
 {
     if (w)
