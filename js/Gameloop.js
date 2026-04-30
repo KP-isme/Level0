@@ -18,6 +18,7 @@ player = new GameObject(50, canvas.height/2, 100, 100, "#ffff00");
 player.vx = 0;
 player.vy = 0;
 
+<<<<<<< HEAD
 
 /*
 npc1 = new GameObject(300, canvas.height/2, 100, 100, "#00ff00");
@@ -172,3 +173,7 @@ function doJump()
         player.vy = 20;
     }
 }
+=======
+player.draw();
+
+>>>>>>> parent of 6dfd001 (de etvtsce)
