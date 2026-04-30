@@ -49,6 +49,7 @@ function GameObject(x,y,w,h,color)
         this.color = color;
     }
 
+<<<<<<< HEAD
 
 
 
@@ -87,11 +88,17 @@ function GameObject(x,y,w,h,color)
     this.vy = 0;
 
     this.drawRect = function()
+=======
+    //this is the color for player
+    this.color = "#ff0000";
+    
+    this.draw = function()
+>>>>>>> parent of 9a17826 (box ITS RED OMg)
     {
 
 
         context.save();
-            context.fillStyle = this.color;
+            context.fillstyle = this.color;
             context.translate (this.x,this.y);
             context.fillRect ((-this.width/2), (-this.height/2), this.width, this.height);
         context.restore();
@@ -110,11 +117,8 @@ function GameObject(x,y,w,h,color)
         context.restore();
     }
 
-        this.move = function()
-    {
-        this.x += this.vx;
-        this.y += this.vy;
-    }
+
+
 
 
     this.collisionCheck = function(obj)

@@ -1,8 +1,6 @@
 var canvas;
 var context;
 var player;
-var timer;
-var interval = 1000/60; //this means the animation is going to play in 60 milliseconds
 
 
 var frictionX = 0.85;
@@ -13,6 +11,7 @@ var gravity = 1;
 canvas = document.getElementById("canvas");
 context = canvas.getContext("2d");
 
+<<<<<<< HEAD
 // player = new GameObject(0,0,100,100, "#00ff00");
 player = new GameObject(50, canvas.height/2, 100, 100, "#ffff00");
 player.vx = 0;
@@ -177,3 +176,8 @@ function doJump()
 player.draw();
 
 >>>>>>> parent of 6dfd001 (de etvtsce)
+=======
+player = new Player();
+
+player.draw();
+>>>>>>> parent of 9a17826 (box ITS RED OMg)
