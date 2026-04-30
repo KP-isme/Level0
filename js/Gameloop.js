@@ -7,6 +7,7 @@ canvas = document.getElementById("canvas");
 context = canvas.getContext("2d");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // player = new GameObject(0,0,100,100, "#00ff00");
 player = new GameObject(50, canvas.height/2, 100, 100, "#ffff00");
 player.vx = 0;
@@ -139,3 +140,8 @@ player.draw();
 =======
 }
 >>>>>>> parent of 4c23557 (I CAN JUMP)
+=======
+player = new Player();
+
+player.draw();
+>>>>>>> parent of 9a17826 (box ITS RED OMg)

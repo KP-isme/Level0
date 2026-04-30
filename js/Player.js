@@ -51,6 +51,7 @@ function GameObject(x,y,w,h,color)
 <<<<<<< HEAD
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -92,6 +93,8 @@ function GameObject(x,y,w,h,color)
 
     this.drawRect = function()
 =======
+=======
+>>>>>>> parent of 9a17826 (box ITS RED OMg)
     //this is the color for player
     this.color = "#ff0000";
     
@@ -106,6 +109,7 @@ function GameObject(x,y,w,h,color)
 
     }
 
+<<<<<<< HEAD
     this.drawCircle = function()
     {
         context.save();
@@ -117,6 +121,11 @@ function GameObject(x,y,w,h,color)
             context.fill();
         context.restore();
     }
+=======
+
+
+
+>>>>>>> parent of 9a17826 (box ITS RED OMg)
 
 
 
